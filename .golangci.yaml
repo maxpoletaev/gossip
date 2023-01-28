@@ -1,0 +1,31 @@
+run:
+  tests: false
+
+linters:
+  disable-all: true
+  enable:
+    - typecheck
+    - staticcheck
+    - gofmt
+    - unparam
+    - prealloc
+    - nilerr
+    - gosimple
+    - unconvert
+    - staticcheck
+    - loggercheck
+    - wastedassign
+    - misspell
+    - goconst
+    - unused
+    - govet
+    - godot
+    - wsl
+
+issues:
+  exclude-use-default: false
+
+linters-settings:
+  errcheck:
+    exclude-functions:
+      - (github.com/go-kit/log.Logger).Log
